@@ -38,9 +38,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+	/**
+	 * Generate random token base user id and current time
+	 *
+	 * @return  string token
+	 */
     public function generateToken()
     {
-        //$this->api_token = str_random(60);
         $this->api_token = encrypt($this->id.'_'.$this->timestamps);
         $this->save();
         return $this->api_token;
