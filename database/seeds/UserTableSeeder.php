@@ -24,7 +24,6 @@ class UserTableSeeder extends Seeder
         $password = Hash::make('password');
 
         \App\User::create([
-            'name' => 'administrator',
             'email' => 'admin@test.com',
             'password' => $password,
         ]);
@@ -32,7 +31,6 @@ class UserTableSeeder extends Seeder
         // And now let's generate a few dozen users for our app:
         for ($i = 0; $i < 10; $i++) {
             \App\User::create([
-                'name' => $faker->name,
                 'email' => $faker->email,
                 'password' => $password,
             ]);
