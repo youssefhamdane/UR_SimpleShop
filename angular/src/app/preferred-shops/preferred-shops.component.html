@@ -1,0 +1,18 @@
+<div class="text-right m-3">
+    <a [routerLink]="['/shops']" class="m-1 underline">Shops</a>
+    <a [routerLink]="['/preferred-shops']" class="m-1">Preferred Shops</a>
+</div>
+<div class="row m-2">
+    <div class="w-100 p-5 text-center bg-light" *ngIf="Shops?.length <=0">There is no preferred shops</div>
+    <div *ngFor="let shop of Shops" class="col-md-3 col-lg-3 col-sm-6 col-xl-2">
+        <div class="card bg-white mb-3" style="max-width: 18rem;">
+            <div class="card-header">{{shop.name}}</div>
+            <div class="card-body p-0">
+                <img class="card-img" src="{{shop.picture}}" alt="{{shop.name}}">
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger btn-square" (click)="removeShop(shop.id)">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
