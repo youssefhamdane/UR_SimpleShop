@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "youssefhamdane/UR_SimpleShop",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "UR Simple Shop.",
     "keywords": [
         "framework",
         "laravel"
@@ -45,7 +45,7 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
