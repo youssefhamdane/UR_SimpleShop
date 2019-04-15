@@ -11,7 +11,7 @@ UR Simple Shop is a simple shop created with laravel and angular.
 
 ### Installation
 
-requires [Node.js](https://nodejs.org/), [PHP 7.2](https://www.php.net/releases/7_2_0.php),[Composer](https://getcomposer.org/).
+requires [Node.js](https://nodejs.org/), [PHP 7.1.3](https://www.php.net/releases/7_2_0.php),[Composer](https://getcomposer.org/).
 
 Install the dependencies.
 
